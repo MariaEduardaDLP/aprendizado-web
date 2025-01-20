@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="survey-form.css">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Cats Coffee Survey Form</h1>
+        <p id="description">Thanks to <a href="http://freecodecamp.org/" target="_blank">freeCodeCamp</a> for providing such rich learning material.</p>
+
+        <form action="." method="post" id="survey-form">
+            <label id="name-label">Name
+                <input type="text" name="name" id="name" placeholder="put your name here" required>
+            </label>
+            <label id="email-label">Email
+                <input type="email" name="email" id="email" placeholder="put your email here" required>
+            </label>
+            <label id="number-label">Age
+                <input type="number" name="age" id="number" max="120" min="12" placeholder="put your age here">
+            </label>
+
+            <label for="dropdown">Favorite Coffee
+                <select name="dropdown" id="dropdown">
+                    <option value="none">Escolha</option>
+                    <option value="expresso">Expresso</option>
+                    <option value="capuccino">Capuccino</option>
+                    <option value="latte">Latte</option>
+                    <option value="mocha">Mocha</option>
+                    <option value="americano">Americano</option>
+                    <option value="frappuccino">Frappuccino</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+            
+            <fieldset>
+                <legend>What do you think about cats?</legend>
+                <label>
+                    <input type="radio" name="complement" value="love">
+                    I love them!
+                </label>
+
+                <label>
+                    <input type="radio" name="complement" value="hate">
+                    I hate them!
+                </label>
+
+                <label>
+                    <input type="radio" name="complement" value="neutral">
+                    I don't care
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Favorites complements</legend>
+                <label>
+                    <input type="checkbox" value="milk">
+                    Milk
+                </label>
+                <label>
+                    <input type="checkbox" value="sugar">
+                    Sugar
+                </label>
+                <label>
+                    <input type="checkbox" value="whipped-cream">
+                    Whipped cream
+                </label>
+                <label>
+                    <input type="checkbox" value="caramel">
+                    Caramel
+                </label>
+                <label>
+                    <input type="checkbox" value="chocolate">
+                    Chocolate
+                </label>
+                <label>
+                    <input type="checkbox" value="vanilla">
+                    Vanilla
+                </label>
+                <label>
+                    <input type="checkbox" value="other">
+                    Other
+                </label>
+
+            </fieldset>
+
+            <label>
+                Any suggestions?
+                <textarea name="suggestions" placeholder="Put your suggestions of new coffee flavors or improvements on the site here..." cols="60" rows="5"></textarea>
+            </label>
+
+            <input type="submit" id="submit">
+        </form>
+    </body>
+</html>
