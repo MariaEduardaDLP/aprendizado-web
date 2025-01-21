@@ -7,34 +7,40 @@
         <title>Survey Form</title>
     </head>
     <body>
-        <h1 id="title">Cats Coffee Survey Form</h1>
+        <div id="header">
+            <img src="images/gato_malhado.png" alt="Pata de gato malhado" id="cat-header">
+            <h1 id="title">Cats Coffee Survey Form</h1>
+            <img src="images/gato_preto.png" alt="Pata de gato preto" id="cat-header">
+        </div>
         <p id="description">Thanks to <a href="http://freecodecamp.org/" target="_blank">freeCodeCamp</a> for providing such rich learning material.</p>
 
         <form action="." method="post" id="survey-form">
-            <label id="name-label">Name
-                <input type="text" name="name" id="name" placeholder="put your name here" required>
-            </label>
-            <label id="email-label">Email
-                <input type="email" name="email" id="email" placeholder="put your email here" required>
-            </label>
-            <label id="number-label">Age
-                <input type="number" name="age" id="number" max="120" min="12" placeholder="put your age here">
-            </label>
+            <section class="personal-info">
+                <label id="name-label">Name
+                    <input type="text" name="name" id="name" placeholder="put your name here" required>
+                </label>
+                <label id="email-label">Email
+                    <input type="email" name="email" id="email" placeholder="put your email here" required>
+                </label>
+                <label id="number-label">Age
+                    <input type="number" name="age" id="number" max="120" min="12" placeholder="put your age here">
+                </label>
 
-            <label for="dropdown">Favorite Coffee
-                <select name="dropdown" id="dropdown">
-                    <option value="none">Escolha</option>
-                    <option value="expresso">Expresso</option>
-                    <option value="capuccino">Capuccino</option>
-                    <option value="latte">Latte</option>
-                    <option value="mocha">Mocha</option>
-                    <option value="americano">Americano</option>
-                    <option value="frappuccino">Frappuccino</option>
-                    <option value="other">Other</option>
-                </select>
-            </label>
-            
-            <fieldset>
+                <label for="dropdown">Favorite Coffee
+                    <select name="dropdown" id="dropdown">
+                        <option value="none">Escolha</option>
+                        <option value="expresso">Expresso</option>
+                        <option value="capuccino">Capuccino</option>
+                        <option value="latte">Latte</option>
+                        <option value="mocha">Mocha</option>
+                        <option value="americano">Americano</option>
+                        <option value="frappuccino">Frappuccino</option>
+                        <option value="other">Other</option>
+                    </select>
+                </label>
+            </section>
+
+            <fieldset class="inline">
                 <legend>What do you think about cats?</legend>
                 <label>
                     <input type="radio" name="complement" value="love">
@@ -52,7 +58,7 @@
                 </label>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="inline">
                 <legend>Favorites complements</legend>
                 <label>
                     <input type="checkbox" value="milk">
@@ -85,12 +91,14 @@
 
             </fieldset>
 
-            <label>
+            <label id="suggestions">
                 Any suggestions?
-                <textarea name="suggestions" placeholder="Put your suggestions of new coffee flavors or improvements on the site here..." cols="60" rows="5"></textarea>
+                <textarea name="suggestions" placeholder="Put your suggestions of new coffee flavors or improvements on the site here (It's just a test, I won't get any response...)" cols="60" rows="5"></textarea>
             </label>
 
             <input type="submit" id="submit">
         </form>
+
+        <img src="images/ícone_de_um_gato_dentro_de_uma_xícara_de_café_com_fundo_transparente-removebg-preview.png" alt="Gato dentro de uma cafeteira" id="cat-footer">
     </body>
 </html>

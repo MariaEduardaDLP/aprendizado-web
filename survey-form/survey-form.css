@@ -1,17 +1,96 @@
 body {
     font-family: "garamond";
+    background-color: rgb(227, 186, 136);
+}
+
+form {
+    background-color: rgb(167, 120, 62);
+    color: white;
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 16px;
+    border: 16px double rgb(130, 78, 15);
+    border-radius: 8px;
 }
 
 h1 {
     font-family: "Lucida Handwriting";
     font-size: 40px;
-    margin-bottom: -16px;
-}
-
-h1, p {
     text-align: center;
+    margin: 16px 8px -16px;
 }
 
 p {
     font-size: 24px;
+    text-align: center;
+    margin: 16px 8px;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold; 
+}
+
+label {
+    font-size: 24px;
+    display: block;
+    margin: 8px;
+}
+
+#suggestions {
+    font-weight: bold;
+}
+
+.personal-info input, select, textarea {
+    display: block;
+    margin-top: 8px;
+    padding: 0 8px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 2em;
+    font-size: 16px;
+
+    border: none;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: none;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+a {
+    color: rgb(122, 51, 4);
+}
+
+#cat-footer {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#cat-header {
+    height: 60px;
+    width: 60px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#submit {
+    display: block;
+    margin: 16px auto 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(122, 51, 4);
+    color: white;
+    padding: 8px 16px;
 }
