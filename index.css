@@ -1,0 +1,104 @@
+* {
+    font-family: "Source Serif 4", serif;
+    margin: 0;
+}
+
+body {
+    background-color: #eafcf9;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    background-color: #2edcc1;
+    padding: 32px 24px;
+    height: auto;
+    width: 100%;
+}
+
+h1 {
+    color: #000000;
+    text-align: left;
+    font-weight: 600;
+    font-size: 4rem;
+    width: max-content;
+    margin: 0 0 0 16px;
+}
+
+main {
+    display: flex;
+    overflow-x: scroll;
+    gap: 72px;
+    margin: 96px 48px 72px;
+}
+
+main::-webkit-scrollbar {
+    background-color: transparent;
+    border-radius: 8px;
+}
+
+main::-webkit-scrollbar-thumb {
+    background-color: #2edcc1;
+    border-radius: 8px;
+}
+
+footer {
+    margin: 0 48px 16px;
+}
+
+.card-projeto {
+    width: 435px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho {
+    background-color: #104d44;
+    padding: 16px 32px;
+    text-align: center;
+    border-radius: 16px 16px 0 0;
+}
+
+iframe {
+    box-sizing: border-box;
+    border: 16px solid #23a591;
+    border-top: none;
+    border-radius: 0 0 16px 16px;
+    height: 460px;
+    width: 435px;
+}
+
+.cabecalho a {
+    font-style: italic;
+    font-size: 24px;
+}
+
+h2, .cabecalho a {
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+footer a {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-style: italic;
+    width: max-content;
+}
+
+#Linkedin-logo {
+    margin-right: 2px;
+}
+
+a {
+    text-decoration: none;
+}

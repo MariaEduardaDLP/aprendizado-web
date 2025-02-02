@@ -39,6 +39,7 @@ label {
 
 #suggestions {
     font-weight: bold;
+    min-height: 100px;
 }
 
 .personal-info input, select, textarea {
@@ -52,6 +53,11 @@ label {
 
     border: none;
     border-radius: 8px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
 }
 
 fieldset {
